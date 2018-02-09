@@ -1,10 +1,8 @@
 version: 0.0
 os: linux
-#files:
-#  - source: ./index.html
-#    destination: /usr/share/basic-example/
-#  - source: ./codedeploy/site.conf
-#    destination: /etc/nginx/conf.d/
+files:
+  - source: ./hello.py
+    destination: /home/ec2-home/
 
 hooks:
   BeforeInstall:
