@@ -4,6 +4,7 @@ phases:
   build:
     commands:
       - echo '...replace with real build commands...'
+      - find . -name \*.sh -print | xargs chmod 755 
       - pip install Flask
 
 artifacts:
