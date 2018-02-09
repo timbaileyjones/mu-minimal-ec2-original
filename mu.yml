@@ -2,8 +2,14 @@ namespace: min-ec2
 environments:
 - name: acceptance
   provider: ec2
+  cluster:
+    instanceType: t2.micro         
+    keyName: timbaileyjones-keypair-oregon
+
 - name: production
   provider: ec2
+
+
 service:
   name: min-ec2
   port: 5000
