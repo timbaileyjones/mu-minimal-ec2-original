@@ -6,7 +6,7 @@ environments:
   provider: ec2
 service:
   name: min-ec2
-  port: 8080
+  port: 5000
   healthEndpoint: /
   pathPatterns:
   - /*
