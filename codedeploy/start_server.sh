@@ -2,8 +2,10 @@
 echo ==================
 echo starting $0 in `pwd`
 cd `dirname $0` 
+
 echo now in $PWD
 cd ..
+
 echo now in $PWD
 echo files here are: 
 find . -type f -print
