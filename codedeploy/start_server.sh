@@ -6,7 +6,7 @@ echo now in $PWD
 echo ==================
 export PATH=/usr/local/bin:$PATH
 export FLASK_APP=hello.py 
-flask run &
+nohup flask run &
 
 echo $! > /tmp/flask.pid
 
