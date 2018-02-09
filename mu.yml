@@ -4,7 +4,7 @@ environments:
   provider: ec2
   cluster:
     instanceType: t2.micro         
-    keyName: timbaileyjones-labs-keypair-oregon
+    keyName: timbaileyjones-labs-keypair-ohio
 
 - name: production
   provider: ec2
