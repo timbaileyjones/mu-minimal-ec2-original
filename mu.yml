@@ -1,13 +1,16 @@
----
-namespace: mu-minimal-ec2
+namespace: min-ec2
 environments:
-  - name: dev
-    provider: ec2
-
+- name: acceptance
+  provider: ec2
+- name: production
+  provider: ec2
 service:
-  name: basic-example
+  name: min-ec2
+  port: 8080
   healthEndpoint: /
-  port: 8000
   pathPatterns:
-    - /*
-
+  - /*
+  pipeline:
+    source:
+      provider: GitHub
+      repo: timbaileyjones/mu-minimal-ec2
