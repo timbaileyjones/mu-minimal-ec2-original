@@ -9,7 +9,7 @@ os: linux
 hooks:
   BeforeInstall:
     - location: codedeploy/install_server.sh
-      timeout: 300
+      timeout: 30
   ApplicationStop:
     - location: codedeploy/stop_server.sh
       timeout: 30
