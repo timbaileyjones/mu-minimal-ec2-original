@@ -1,6 +1,6 @@
 #!/bin/bash
 export FLASK_APP=hello.py 
-lask run &
+flask run &
 
 echo $! > /tmp/flask.pid
 
