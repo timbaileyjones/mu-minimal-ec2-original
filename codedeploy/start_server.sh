@@ -1,6 +1,7 @@
 #!/bin/bash
 echo ==================
 echo starting $0 in `pwd`
+cd `dirname $0` 
 echo files here are: 
 find . -type f -print
 echo ==================
