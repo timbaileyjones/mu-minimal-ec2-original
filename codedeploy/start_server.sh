@@ -17,7 +17,7 @@ fi
 #  added a little voodoo from the bottom of this page:
 #     https://docs.aws.amazon.com/codedeploy/latest/userguide/troubleshooting-deployments.html#troubleshooting-long-running-processes
 #
-flask run -p 8080 > /dev/null 2> /dev/null < /dev/null &
+flask run -p 8080 -h 0.0.0.0.> /dev/null 2> /dev/null < /dev/null &
 
 echo $! > /tmp/flask.pid
 sleep 3
